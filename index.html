@@ -1,86 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" sizes="32x32" href="atrnx_logo_ico_32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="atrnx_logo_ico_16.png">
-	<title>aectronix</title>
-</head>
-<style type="text/css">
-	body {
-		font-family: 'Roboto', Arial, sans-serif;
-	}
-	.main {
-		width: 400px;
-		margin-top: 10%;
-		margin-left: 15%;
-	}
+<!doctype html>
+<html lang="en" class="site">
+  <head>
+    <title>aectronix</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body class="main">
+  
+    <header class="header">
+      <div class="header__bar container">
+        <a class="header__brand" href="#" aria-label="aectronix">
+          <img class="header__logo" src="img/aex_logo.png" alt="aex_logo">
+        </a>
 
-		@media (max-width: 400px) {
-		    /* Adjust styles for mobile devices */
-		    .main {
-		        width: 100%; /* Make it 100% width on small screens */
-		        margin-left: 0; /* Remove left margin on small screens */
-		    }
-		}
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">/ <a class="nav__link nav__link--current" href="#">home</a></li>
+            <li class="nav__item">/ <a class="nav__link" href="#">services</a></li>
+            <li class="nav__item">/ <a class="nav__link" href="#">about</a></li>
+            <li class="nav__item">/ <a class="nav__link" href="#">blog</a></li>
+            <li class="nav__item">&nbsp;</li>
+            <li class="nav__item">> <a class="nav__link" href="#">en</a></li>
+          </ul>
+        </nav>
 
-	.motto {
-		color: #777;
-		margin: 48px 0 0 96px;
-	}
-	.motto a:link, .motto a:visited {
-		color: #777;
-	}
-	.motto a:hover, .motto a:active {
-		color: #111;
-	}
-	.bt-load {
-	    width: 192px;
-	    height: 32px;
-		padding-bottom: 4px;
-	    margin: 32px 0 0 -2px;
-	    background-color: black;
-	    border: none;
-	    border-radius: 3px;
-	    color: white;
-	    font-size: 14px;
-	    text-align: center;
-	    cursor: pointer;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	}
-	.bt-load a {
-		color: #fff !important;
-		text-decoration: none;
-	}
-	.bt-load a:hover, .bt-load a:active {
-		color: #eee !important;
-	}
-	.ico {
-	    width: 16px;
-	    height: 16px;
-	    margin-right: 16px;
-	    position: relative;
-	    top: 2px;
-	}
-</style>
-<body>
-	<section class="main">
-		<div>
-			<img src="atrnx_logotext_64.png">
-			<div class="motto">
-				<p>Digitization of the construction industry.</p>
-				<a href="mailto:info@aectronix.com">info@aectronix.com</a>
-				<button class="bt-load">
-					<a href="atrnx_brief.pdf" download="atrnx_brief.pdf" title="Click to download this document"><img src="img_load.png" alt="Download" class="ico">Our Sevices (PDF)</a>
-				</button>
-			</div>
-		</div>
-	</section>
-</body>
+      </div>
+    </header>
+
+    <section class="cover">
+      <div class="cover__inner container">
+        <div class="cover__text">
+          <div class="cover__title">
+            <span class="title_stack">
+              <span class="title__line">We are making</span>
+              <span class="title__line">construction digital</span>
+              <span class="title__line">again. Whatever.</span>
+            </span>
+          </div>
+          <div class="cover__action">
+            <a class="action__buttons" href="#">
+              <span class="button button--primary test" href="#">
+                Contact Us
+              </span>
+              <span class="button button--icon"></span>
+            </a>
+          </div>
+          <div class="cover__desc">
+            Utilizing BIM, VDC and digital approach, we help to transform
+            AECO sector for better efficiency & outcomes.
+          </div>
+        </div>
+        <figure>
+          <div class="cover__image" role="img" aria-label="illustration">
+            <img src="img/aex_cover_p01.png">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+  </body>
 </html>
